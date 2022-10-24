@@ -88,8 +88,8 @@ void onLedChange()  {
 void dht_sensor_getdata()
 {
   //Asigno los valores leídos a las variables
-  float temperatura =dht.readTemperature();
-  float humedad= dht.readHumidity();
+  temperatura = dht.readTemperature();
+  humedad = dht.readHumidity();
   //Muestro por serial los resultados
   Serial.println("Temperatura = " + String(temperatura)+"  Humedad = " + String(humedad));
 }
