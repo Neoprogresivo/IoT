@@ -22,6 +22,11 @@
 //de lectura y que se actualicen cada cierto tiempo (ejemplo, 15 segundos).
 #include "DHT.h"
 
+//El sensor DHT11 se conecta de la siguiente forma a WeMos
+// GND a un GND en WeMos
+// Data al puerto D2 en Wemos (que en realidad es el D4 en el programa)
+// Vcc a un puerto 5V en Wemos
+
 //Configuro las variables que permiten el uso del pin D4 (que es D2 en Wemos) y del sensor DHT11
 #define DHTpin D4 // D4 on the nodemcu ESP8266
 #define DHTTYPE DHT11
