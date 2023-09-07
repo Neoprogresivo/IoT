@@ -17,7 +17,7 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 Navigate to Tools > Board > Boards Manager..., type the keyword "esp32" in the search box, 
 select the latest version of esp32, and install it.
 
-4. Selecciona tu placa y puerto
+4.- Selecciona tu placa y puerto
 
 Placa
 
