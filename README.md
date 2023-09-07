@@ -12,6 +12,7 @@ Pasos para poder programar ESP32 C3 (y otros) con Arduino IDE
 Para ello se debe realizar lo siguiente:
 
 Ir a File > Preferences, y completar en "Additional Boards Manager URLs" con la siguiente url: 
+
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 
 Después ir a Tools > Board > Boards Manager..., escribe "esp32" en el cuadro de búsqueda, 
