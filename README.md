@@ -33,11 +33,19 @@ Ir a Tools > Port y seleccionar el nombre del puerto serial al que está conecta
 Es común que el puerto por defecto sea el COM3 o uno superior (ya que el COM1 y el COM2 por lo general están reservador para los puertos seriales de tu dispositivo).
 
 #Nota importante sobre el uso de NFC por SPI en Arduino R4
+
 Para utilizar la librería PN532, se debe modificar el archivo PN532_SPI.cpp que está en la carpeta PN532_SP
+
  _spi->begin();
+
    //Agregar lo siguiente (cambió la forma de llamarlo)
+   
    _spi->beginTransaction(SPISettings(2000000, LSBFIRST, SPI_MODE0));
+   
    //Y comentar todo lo demás: Ejemplo:
+   
    //_spi->setDataMode(SPI_MODE0); // PN532 only supports mode0 // MOD SPISettings
+   
    //_spi->setBitOrder(LSBFIRST); // 
+   
    //SPISettings(2000000, LSBFIRST, SPI_MODE0);
